@@ -49,9 +49,9 @@ const taskDm = new Task('dm')
   .depends('tgui/public/*.bundle.*')
   .depends('tgui/public/*.chunk.*')
   .depends('ModularTegustation/**') // LOBOTOMYCORPORATION ADDITION ensure it also checks for updates in modular code
-  .depends('lobotomy-corp13.dme')
-  .provides('lobotomy-corp13.dmb')
-  .provides('lobotomy-corp13.rsc')
+  .depends('Kirie-LC13.dme')
+  .provides('Kirie-LC13.dmb')
+  .provides('Kirie-LC13.rsc')
   .build(async () => {
     let compiler = 'dm';
     // Let's do some registry queries on Windows, because dm is not in PATH.
@@ -70,7 +70,7 @@ const taskDm = new Task('dm')
     } else {
       compiler = 'DreamMaker';
     }
-    await exec(compiler, ['lobotomy-corp13.dme']);
+    await exec(compiler, ['Kirie-LC13.dme']);
   });
 
 // Frontend
