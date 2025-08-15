@@ -40,14 +40,16 @@ export const ShowAttributes = (props, context) => {
                 <>
                   <span> + </span>
                   <AnimatedNumber initial={0} value={
-                    data[attr + "level_buff"]} />
+                    data[attr + "level_buff"]
+                  } />
                 </>
               )}
               {data[attr + "level_buff"] < 0 && (
                 <>
                   <span> - </span>
                   <AnimatedNumber initial={0} value={
-                    Math.abs(data[attr + "level_buff"])} />
+                    Math.abs(data[attr + "level_buff"])
+                  } />
                 </>
               )}
               <br />
@@ -65,14 +67,16 @@ export const ShowAttributes = (props, context) => {
                 <>
                   <span> + </span>
                   <AnimatedNumber initial={0} value={
-                    data[stat + "bonus"]} />
+                    data[stat + "bonus"]
+                  } />
                 </>
               )}
               {data[stat + "bonus"] < 0 && (
                 <>
                   <span> - </span>
                   <AnimatedNumber initial={0} value={
-                    Math.abs(data[stat + "bonus"])} />
+                    Math.abs(data[stat + "bonus"])
+                  } />
                 </>
               )}
               <br />
