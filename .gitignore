@@ -235,3 +235,7 @@ tools/LinuxOneShot/TGS_Logs
 
 # Common build tooling
 !/tools/build
+
+# Dreamchecker
+dreamchecker.exe
+run_dreamchecker.bat
